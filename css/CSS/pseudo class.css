@@ -1,0 +1,94 @@
+/* Pseudo class adalah kelas semu yang dimiliki oleh sebuah elemen HTMl yang membuat kita dapat mendefinisikan style pada "keadaan tertentu" dari elemen tersebut.*/
+/* tipe pseudo class yang berhubungan dengan link
+: link adalah style default pada sebuah link (a yang memiliki href)
+: hover adalah style ketika kursor mouse berada diatas sebuah link/elemen
+: active adalah style ketika sebuah link di klik (keadaan aktif)
+: visited adalah style ketika sebuah link sudah pernah dikunjungi sebelumnya (menggunakan browser yang sama)
+*/
+
+/* pseudo class yang berhubungan dengan link*/
+.hello:link {
+  color: orange;
+}
+
+/*hover berfungsi untuk merubah tampilan link saat kursor berada pada link*/
+.hello:hover {
+  font-family: arial;
+  font-size: 25px;
+}
+
+/* active berfungsi untuk merubah tampilan saat link ditekan*/
+.hello:active {
+  font-style: italic;
+}
+
+/* visited berguna untuk memberitahukan kita bahwa link tersebut sudah pernah kita gunakan, contohnya saat sudah kita gunakan maka linknya akan berubah warna*/
+.hello:visited {
+  color: maroon;
+}
+
+/*pseudo class yang berhubungan dengan posisi elemen (1)
+: first-child memilih elemen pertama dari sebuah parent (elemen pembungkusnya)
+: last-child memilih elemen terakhir dari sebuah parent (elemen pembungkusnya)
+: nth-child memilih elemen ke0n dari sebuah parent (elemen pembungkusnya).
+
+n bisa berarti urutan (1), (2), ... atau pola (2n), (3n+2), (4n-1) atau ganjil dan genap (even & (odd)
+*/
+
+/*pseudo class yang berhubungan dengan posisi elemen (1)*/
+/*cara bacanya : css tolong carikan saya a yang ada didalam li yang merupakan anak pertama*/
+li:first-child a {
+  color: greenyellow;
+}
+
+/*dikarenakan ada kata last maka artinya yg dipilih adalah yang bagian terakhir*/
+li:last-child a {
+  color: aqua;
+}
+
+/* nth-child bisa diatur urutan ke berapa yang akan dibuat dalam css dengan menggunakan parameter '()'*/
+li:nth-child(5) a {
+  color: green;
+}
+
+/* dengan menggunakan '2n' itu artinya setiap anak li yaitu a yg berkelipatan 2 maka akan diberi css*/
+li:nth-child(2n) a {
+  color: green;
+}
+
+/* jika '3n' artinya kelipatan 3*/
+li:nth-child(3n) a {
+  color: black;
+}
+
+/* jika kita ingin menggunakan kelipatan contohnya kelipatan 3, namun dimulai dari yg 1 atau awal maka bisa menggunakan '3n-2'*/
+li:nth-child(3n-2) a {
+  color: darkmagenta;
+}
+
+/* kita juga bisa menggunakan kata even(genap) dan odd(ganjil)*/
+li:nth-child(even) a {
+  color: red;
+}
+
+li:nth-child(odd) a {
+  color: black;
+}
+
+li:nth-child(odd) a:hover {
+  color: deeppink;
+}
+
+/*cara bacanya : p yang pertama kali type(mungkin diketik) atau bagian awal dari paragraf nya*/
+p:first-of-type {
+  color: deeppink;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*cara bacanya : p yang terakhir kali type(mungkin diketik) atau bagian terakhir*/
+p:last-of-type {
+  color: blue;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}

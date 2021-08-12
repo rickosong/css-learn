@@ -1,0 +1,30 @@
+/* cara pakai margin
+overlapping margin
+negatif margin
+auto
+shorthand
+*/
+
+div {
+  display: inline-block;
+}
+/*cara pakai*/
+.satu {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+
+/*overlapping margin*/
+/*kotak satu diberi 150px margin bawah, lalu saat kotak 2 diberi margin 50px tidak ada oerubahan sama sekali, itu dikarenakan margin tidak saling menambahkan, jadi margin yg diambil adalah margin yg paling besar ukurannya(khusus margin top bottom), itulah yg disebut overlapping margin*/
+.dua {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+}
+
+.tiga {
+  width: 50px;
+  height: 50px;
+  background-color: cyan;
+}

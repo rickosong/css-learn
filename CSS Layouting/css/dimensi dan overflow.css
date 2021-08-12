@@ -1,0 +1,59 @@
+/*satuan yang bisa digunakan di width dan height: px, %, in, cm, mm, pt, pc*/
+
+.satu {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+}
+
+/*warna birunya hanya akan ada di dalam div 1 yang berwarna pink, karena % itu relatif kepada parent atau pembungkusnya yaitu div class satuS*/
+.dua {
+  width: 100%;
+  background-color: royalblue;
+}
+
+.lorem {
+  /*jika widthnya ditentukan maka sebanyak apapun tulisan yg dibuat, div nya akan tetap mempertahankan lebarnya dan tingginya akan relatif karena tidak ditentukan*/
+  width: 200px;
+  background-color: aqua;
+}
+
+.how {
+  /*jika lebar dan tingginya sudah dtentukan namun kontennya terlalu banyak maka kontennya akan keluar dari kotaknya, dikarenakan saat lebar dan tingginya ditentukan maka akan jadi absolute(tidak berubah)*/
+  /*contoh overflow visible*/
+  width: 200px;
+  height: 200px;
+  background-color: rgb(2, 255, 57);
+}
+
+/*solusi agar kontennya tidak keluar dari kotaknya adalah menggunakan overflow
+overflow ini adalah properti css yang akan kalian gunakan untuk mengatur perilaku elemen yang kasusnya seperti kode diatas, yaitu kotak d=tidak dapat menampung konten sehingga kontennya keluar dari kotak*/
+/*value overflow : visible, auto, hidden, scroll
+visible adalah value default, kalau misalkan ada konten yg keluar dari parent nya, maka akan diperlihatkan
+auto akan secara otomatis menambahkan scroll ketika kontennya tidak cukup
+hidden ketika ada konten ya=g kelebihan maka akan disembunyikan
+scroll kurang lebih sama seperti auto, namun saat kontennya cukup di dalam parentnya, scrollnya tetap ada*/
+
+/*contoh overflow auto*/
+.auto {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(2, 204, 255);
+  overflow: auto;
+}
+
+/*contoh overflow hidden*/
+.hidden {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 2, 221);
+  overflow: hidden;
+}
+
+/*contoh overflow scroll*/
+.scroll {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(209, 255, 2);
+  overflow: scroll;
+}

@@ -1,0 +1,8 @@
+/* setiap deklarasi css(selector) memliki berat yang berbeda. Berat tersebut menentukan seberapa spesifik sebuah elemen dapat dipilih oleh selector.*/
+ul#sarapan li {
+  color: deeppink;
+}
+
+ul#sarapan li.favorit {
+  color: red;
+}

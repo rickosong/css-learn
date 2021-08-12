@@ -1,0 +1,17 @@
+/*background-color mengatur warna pada background*/
+/*background-image mengatur gambar yang akan digunakan pada background*/
+/*background-position mengatur posisi gambar pada background*/
+/*background-repeat mengatur jenis pengulangan gambar pada background*/
+
+body {
+  background-color: lightblue;
+  background-image: url("../picture/pic_1902_093827.png");
+  /* agar gambabarnya tidak berulang maka gunakan background-repeat*/
+  /*repeat -x hanya untuk mengulang x, dan repeat -y hanya untuk mengulang y*/
+  background-repeat: repeat-x;
+  /*untuk no-repeat maka gambarnya todk akan berulang*/
+  background-repeat: no-repeat;
+  /*jika prperty background-repeat nya adalah 'no-repeat', maka kita punya akses ke property background-position*/
+  background-position: center top;
+  /*jika saat propertynya bottom center, namun gambarnya malah ke atas, itu artinya content kita yg kurang banyak, karena gambarnya menyesuaikan content*/
+}

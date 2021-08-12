@@ -1,0 +1,28 @@
+h1 {
+  /* untuk jenis font */
+  font-family: Arial, Helvetica, sans-serif;
+  /*untuk ukuran font*/
+  font-size: 80px;
+  /*untuk ketebalan font*/
+  font-weight: bold;
+  /*untuk ketebalan huruf awal*/
+  font-variant: small-caps;
+  /*untuk gaya tulisan*/
+  /* ada dua italic, dan obique*/
+  font-style: italic;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-style: oblique;
+  /*line height untuk mengatur jarak baris(behalat)*/
+  line-height: 40px;
+}
+
+h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-style: oblique;
+  /*di h6 ini tidak ada line height*/
+}

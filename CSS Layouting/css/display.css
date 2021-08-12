@@ -1,0 +1,35 @@
+.navigasi {
+  background-color: pink;
+}
+
+.utama {
+  background-color: lightgreen;
+}
+
+.utama span {
+  color: blue;
+  background-color: black;
+}
+
+  /*kita harus mengubah display inline menjadi inline-block agar kita bisa menggunakan hal-hal yg ada di disply block, contohnua seperti height dan width, contohnya seperti dibawah ini saya menambahkan displaynya agar elemen a dapat diubah*/
+  /*jika tidak ada inline-block, maka kita tidak dapat mengubah height dan width dalam elemen a*/
+}
+
+.utama {
+  width: 600px;
+  background-color: dodgerblue;
+}
+
+.utama h2 {
+  background-color: rgb(0, 255, 170);
+}
+
+img {
+  /*jika kita kasih display none, maka gambar logo smk2 nya akan hilang karena displaynya tidak ada*/
+  display: none;
+}
+
+.navigasi li {
+    /* agar li mejadi inline maka kita ubah displaynya menjadi inline agar elemen a nya bisa berjejer seara horizontal*/
+    display: inline;
+}

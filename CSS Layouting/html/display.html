@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Display</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/display.css" />
+  </head>
+  <body>
+    <!-- tag pada html digunakan untuk memberikan 'maksud'/'arti' pada sebuah konten (p untuk paragraf, h1 untuk heading utama, dll).-->
+    <!--tag <div> dan <span> tidak memiliki 'arti' apapun, keduanya digunakan untuk mengelompokkN tag-tag html dan memberikan informasi terhadap tag-tag  tersebut.-->
+    <!--tag <div> digunakan untuk pengelompokan beberapa tag di html, sedangkan tag <span> hanya mengelompokkan beberapa baris(sedikit saja)-->
+    <!--semua elemen html mempunyai display-->
+    <!--untuk <div> mempunyai display block, sedangkan <span> memiliki display inline-->
+    <!--setiap tag pada html berada di dalam sebuah kotak. propertu dispak pada CSS mengatur perilaku dari kotak tersebut.-->
+    <!--Value dari display ada 4 yaitu: inline, inline-block, block, dan none-->
+    <!-- inline
+        .elemen html yang secara default tidak menambahkan baris baru ketika dibuat
+        .lebar dan tinggi elemennya sebesar konten yang ada di dalamnya
+        .kita tidak dapat mengatur tinggi dan lebar dari elemen inline
+        .margin dan padding hanya mempengaruhi elemen secara horizontal, tidak vertikal 
+    -->
+    <!--elemen inline : b, strong, i, em, a, span, sub, sup, button, input, label, select, textarea-->
+
+    <!-- block
+        .elemen html yang secara default menambahkan baris baru ketika dibuat
+        .jika tidak diatur lebarnya, maka lebar default dari elemen block akan memenuhi lebar dari browser/parentnya
+        .kita dapat mengatur tinggi lebar dari elemen block
+        .di dalam elemen blockm kita dapat menyimpan tag dengan inline, inline-block, atau bahkan elemeen block lagi
+    -->
+    <!--elemen block : h1-h6, p, ol, ul, li, form, hr, div-->
+
+    <!-- none : digunnakan untuk menghilangkan sebuah elemen-->
+    <div class="header">
+      <h1>Selamat Datang di Website Kami</h1>
+    </div>
+
+    <div class="navigasi">
+      <h2>Daftar Link</h2>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+      </ul>
+      <!--link 5 dibawah ini akan tersusun secara horizontal(berjejer) bukan vertikal (ke bawah), karena elemen a mempunyai display inline-->
+    </div>
+    <div class="utama">
+      <h2>Judul Artikel</h2>
+      <!--jika h2 adalah elemen block maka jika ada dua yang sama maka kan ada halat nya-->
+      <h2>Judul Artikel</h2>
+      <!--hanya tag img saja yang merupaan inline yang bisa diatur tinggi dan lebarnya-->
+      <img src="../picture/homepage.jpg" alt="Logo SMKN 2 Banjarmasin" title="Logo SMKN 2 Banjarmasin" />
+      <p>
+        Lorem <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Ab unde repellendus accusamus doloribus eaque. Nemo perferendis ipsam natus neque nam mollitia aliquid. Fuga, porro rerum placeat optio id laboriosam impedit!
+      </p>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, voluptas eum ipsum delectus magni necessitatibus debitis molestias id. Neque, aperiam eveniet perspiciatis adipisci aliquam quaerat soluta voluptate quod rerum
+        voluptatibus!
+      </p>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright 2015, coba layouting css.</p>
+    </div>
+  </body>
+</html>
